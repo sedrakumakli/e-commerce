@@ -13,7 +13,7 @@ const addToCart = () => {
 </script>
 <template>
   <div class="card">
-    <img :src="product.image" alt="" />
+    <img :src="product.thumbnail" alt="" />
     <div class="info">
       <h2>{{ product.title }}</h2>
       <p>{{ product.description }}</p>
@@ -23,15 +23,11 @@ const addToCart = () => {
   </div>
 </template>
 <style>
-.container {
+/* .container {
   max-width: 1200px;
   margin: 40px auto;
   padding: 0 20px;
-
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
+} */
 
 .card {
   background: #ffffff;

@@ -13,7 +13,7 @@ const cartStore = useCartStore();
         <!-- Products -->
         <div class="cart-items">
           <div v-for="item in cartStore.items" :key="item.id" class="cart-item">
-            <img :src="item.image" :alt="item.title" class="product-image" />
+            <img :src="item.thumbnail" :alt="item.title" class="product-image" />
 
             <div class="product-info">
               <h2>{{ item.title }}</h2>
@@ -89,6 +89,7 @@ const cartStore = useCartStore();
 .cart-container h1 {
   margin-bottom: 30px;
   color: #1e293b;
+  text-align: center;
 }
 
 .cart-layout {
